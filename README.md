@@ -35,7 +35,7 @@ Menciona las herramientas que utilizaste para crear tu proyecto
 5. Extension Karate test para intelliJ (plugin)
 
 Autores ✒️
-Rubén Martinez Padilla
+Rubén Darío Martinez Padilla
 
 Expresiones de Gratitud 🎁
 Gracias por leer este archivo

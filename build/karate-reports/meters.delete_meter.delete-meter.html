@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2023-06-29 09:29:11 PM</div>
+    <div>2023-06-30 01:44:51 AM</div>
   </div>        
 </div>
 
@@ -72,7 +72,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>4337</span>
+              <span>ms:</span>&nbsp;<span>3580</span>
             </div>
           </div>
           <div class="step-row">
@@ -104,7 +104,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.6">21:29:07.484 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.6">01:44:48.119 karate.env system property was: null 
 </div>   
 
   
@@ -124,7 +124,7 @@
         <span>*</span>&nbsp;<span>call read(&quot;../post_create_meter/create-meter.feature@createmeter&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3162</div>
+    <div class="time-cell passed">2442</div>
   </div>
 
    
@@ -143,7 +143,7 @@
         <div class="step-indent"></div>
         <div class="step-cell passed">meters.delete_meter.post_create_meter.create-meter</div>
       </div>
-      <div class="time-cell passed">3120</div>
+      <div class="time-cell passed">2418</div>
     </div>
     <div>
       <div><div>
@@ -243,7 +243,7 @@
         <span>*</span>&nbsp;<span>def jsonResponse = read(&#39;../data/ExpectedGetMeterJson.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">130</div>
+    <div class="time-cell passed">233</div>
   </div>
 
    
@@ -299,7 +299,7 @@
         <span>*</span>&nbsp;<span>request jsonCreate</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -327,7 +327,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2979</div>
+    <div class="time-cell passed">2176</div>
   </div>
 
    
@@ -336,7 +336,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.10.0.call.0.15">21:29:07.980 request:
+  <div class="preformatted" data-parent="0.10.0.call.0.15">01:44:48.745 request:
 1 &gt; POST https://ops.enerbit.dev/learning/api/v1/meters
 1 &gt; Accept: application/json
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -347,9 +347,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;serial&quot;:&quot;50896234&quot;,&quot;connection_type&quot;:&quot;indirecta&quot;,&quot;storage_system&quot;:&quot;externo&quot;,&quot;condition&quot;:&quot;usado&quot;,&quot;owner&quot;:&quot;RF&quot;,&quot;location&quot;:&quot;Almacen la loma&quot;,&quot;manufacturer&quot;:&quot;yes&quot;,&quot;purchase&quot;:&quot;2022-07-28 03:08:49.340514&quot;,&quot;i_max&quot;:7777.654,&quot;i_b&quot;:77.5,&quot;i_n&quot;:77.5,&quot;seals&quot;:777.65}
 
-21:29:10.700 response time in milliseconds: 2720
+01:44:50.619 response time in milliseconds: 1870
 1 &lt; 201
-1 &lt; Date: Fri, 30 Jun 2023 02:29:15 GMT
+1 &lt; Date: Fri, 30 Jun 2023 06:44:55 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 324
 1 &lt; Connection: keep-alive
@@ -359,7 +359,7 @@
 1 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
 1 &lt; Access-Control-Allow-Headers: DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
 1 &lt; Access-Control-Max-Age: 1728000
-{&quot;serial&quot;:&quot;50896234&quot;,&quot;connection_type&quot;:&quot;indirecta&quot;,&quot;storage_system&quot;:&quot;externo&quot;,&quot;condition&quot;:&quot;usado&quot;,&quot;owner&quot;:&quot;RF&quot;,&quot;location&quot;:&quot;Almacen la loma&quot;,&quot;manufacturer&quot;:&quot;yes&quot;,&quot;purchase&quot;:&quot;2022-07-28 03:08:49.340514&quot;,&quot;i_max&quot;:7777.654,&quot;i_b&quot;:77.5,&quot;i_n&quot;:77.5,&quot;seals&quot;:777.65,&quot;id&quot;:314,&quot;created_at&quot;:&quot;2023-06-30T02:29:14.708929&quot;,&quot;updated_at&quot;:null}
+{&quot;serial&quot;:&quot;50896234&quot;,&quot;connection_type&quot;:&quot;indirecta&quot;,&quot;storage_system&quot;:&quot;externo&quot;,&quot;condition&quot;:&quot;usado&quot;,&quot;owner&quot;:&quot;RF&quot;,&quot;location&quot;:&quot;Almacen la loma&quot;,&quot;manufacturer&quot;:&quot;yes&quot;,&quot;purchase&quot;:&quot;2022-07-28 03:08:49.340514&quot;,&quot;i_max&quot;:7777.654,&quot;i_b&quot;:77.5,&quot;i_n&quot;:77.5,&quot;seals&quot;:777.65,&quot;id&quot;:390,&quot;created_at&quot;:&quot;2023-06-30T06:44:54.895387&quot;,&quot;updated_at&quot;:null}
 
 </div>   
 
@@ -408,7 +408,7 @@
         <span>And</span>&nbsp;<span>match $ == jsonResponse</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -436,7 +436,7 @@
         <span>And</span>&nbsp;<span>def meterId = $.id</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -469,7 +469,7 @@
         <span>Given</span>&nbsp;<span>url &quot;https://ops.enerbit.dev/learning/api/v1/meters/&quot; + meterId</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">24</div>
   </div>
 
    
@@ -497,7 +497,7 @@
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">1172</div>
+    <div class="time-cell passed">1113</div>
   </div>
 
    
@@ -506,8 +506,8 @@
 
   
 
-  <div class="preformatted" data-parent="0.12">21:29:10.725 request:
-2 &gt; DELETE https://ops.enerbit.dev/learning/api/v1/meters/314
+  <div class="preformatted" data-parent="0.12">01:44:50.657 request:
+2 &gt; DELETE https://ops.enerbit.dev/learning/api/v1/meters/390
 2 &gt; Accept: application/json
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Host: ops.enerbit.dev
@@ -516,9 +516,9 @@
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-21:29:11.885 response time in milliseconds: 1160
+01:44:51.756 response time in milliseconds: 1099
 2 &lt; 202
-2 &lt; Date: Fri, 30 Jun 2023 02:29:16 GMT
+2 &lt; Date: Fri, 30 Jun 2023 06:44:56 GMT
 2 &lt; Content-Type: application/json
 2 &lt; Content-Length: 324
 2 &lt; Connection: keep-alive
@@ -528,7 +528,7 @@
 2 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
 2 &lt; Access-Control-Allow-Headers: DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
 2 &lt; Access-Control-Max-Age: 1728000
-{&quot;serial&quot;:&quot;50896234&quot;,&quot;connection_type&quot;:&quot;indirecta&quot;,&quot;storage_system&quot;:&quot;externo&quot;,&quot;condition&quot;:&quot;usado&quot;,&quot;owner&quot;:&quot;RF&quot;,&quot;location&quot;:&quot;Almacen la loma&quot;,&quot;manufacturer&quot;:&quot;yes&quot;,&quot;purchase&quot;:&quot;2022-07-28 03:08:49.340514&quot;,&quot;i_max&quot;:7777.654,&quot;i_b&quot;:77.5,&quot;i_n&quot;:77.5,&quot;seals&quot;:777.65,&quot;id&quot;:314,&quot;created_at&quot;:&quot;2023-06-30T02:29:14.708929&quot;,&quot;updated_at&quot;:null}
+{&quot;serial&quot;:&quot;50896234&quot;,&quot;connection_type&quot;:&quot;indirecta&quot;,&quot;storage_system&quot;:&quot;externo&quot;,&quot;condition&quot;:&quot;usado&quot;,&quot;owner&quot;:&quot;RF&quot;,&quot;location&quot;:&quot;Almacen la loma&quot;,&quot;manufacturer&quot;:&quot;yes&quot;,&quot;purchase&quot;:&quot;2022-07-28 03:08:49.340514&quot;,&quot;i_max&quot;:7777.654,&quot;i_b&quot;:77.5,&quot;i_n&quot;:77.5,&quot;seals&quot;:777.65,&quot;id&quot;:390,&quot;created_at&quot;:&quot;2023-06-30T06:44:54.895387&quot;,&quot;updated_at&quot;:null}
 
 </div>   
 
@@ -578,7 +578,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3061</span>
+              <span>ms:</span>&nbsp;<span>2388</span>
             </div>
           </div>
           <div class="step-row">
@@ -610,7 +610,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.6">21:29:07.478 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.6">01:44:48.110 karate.env system property was: null 
 </div>   
 
   
@@ -658,7 +658,7 @@
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">3039</div>
+    <div class="time-cell passed">2244</div>
   </div>
 
    
@@ -667,7 +667,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.17">21:29:07.980 request:
+  <div class="preformatted" data-parent="0.17">01:44:48.729 request:
 1 &gt; DELETE https://ops.enerbit.dev/learning/api/v1/meters/xyz
 1 &gt; Accept: application/json
 1 &gt; Host: ops.enerbit.dev
@@ -676,9 +676,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:29:10.588 response time in milliseconds: 2608
+01:44:50.427 response time in milliseconds: 1683
 1 &lt; 422
-1 &lt; Date: Fri, 30 Jun 2023 02:29:14 GMT
+1 &lt; Date: Fri, 30 Jun 2023 06:44:54 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 99
 1 &lt; Connection: keep-alive
@@ -737,7 +737,7 @@
         <span>And</span>&nbsp;<span>match $ == {  &quot;detail&quot;: [  {  &quot;loc&quot;: [  &quot;path&quot;,  &quot;id&quot;  ],  &quot;msg&quot;: &quot;value is not a valid integer&quot;,  &quot;type&quot;: &quot;type_error.integer&quot;  }  ]  }</span>
       </div>
     </div>
-    <div class="time-cell passed">18</div>
+    <div class="time-cell passed">141</div>
   </div>
 
    
@@ -766,7 +766,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3073</span>
+              <span>ms:</span>&nbsp;<span>2421</span>
             </div>
           </div>
           <div class="step-row">
@@ -789,7 +789,7 @@
         <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -798,7 +798,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.6">21:29:07.484 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.6">01:44:48.119 karate.env system property was: null 
 </div>   
 
   
@@ -818,7 +818,7 @@
         <span>Given</span>&nbsp;<span>url &quot;https://ops.enerbit.dev/learning/api/v1/meters/&quot; + &quot;99999999999999999&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -846,7 +846,7 @@
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">3051</div>
+    <div class="time-cell passed">2280</div>
   </div>
 
    
@@ -855,7 +855,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.23">21:29:07.980 request:
+  <div class="preformatted" data-parent="1.23">01:44:48.710 request:
 1 &gt; DELETE https://ops.enerbit.dev/learning/api/v1/meters/99999999999999999
 1 &gt; Accept: application/json
 1 &gt; Host: ops.enerbit.dev
@@ -864,9 +864,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:29:10.608 response time in milliseconds: 2624
+01:44:50.470 response time in milliseconds: 1760
 1 &lt; 404
-1 &lt; Date: Fri, 30 Jun 2023 02:29:15 GMT
+1 &lt; Date: Fri, 30 Jun 2023 06:44:54 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 28
 1 &lt; Connection: keep-alive
@@ -925,7 +925,7 @@
         <span>And</span>&nbsp;<span>match $.detail == &quot;meter not found&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">14</div>
+    <div class="time-cell passed">134</div>
   </div>
 
    
@@ -954,7 +954,7 @@
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>2677</span>
+              <span>ms:</span>&nbsp;<span>2241</span>
             </div>
           </div>
           <div class="step-row">
@@ -977,7 +977,7 @@
         <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -986,7 +986,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.6">21:29:07.478 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.6">01:44:48.119 karate.env system property was: null 
 </div>   
 
   
@@ -1006,7 +1006,7 @@
         <span>Given</span>&nbsp;<span>url &quot;https://ops.enerbit.dev/learning/api/v1/meters/&quot; + &quot;99999999999999999&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">13</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -1034,7 +1034,7 @@
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">2661</div>
+    <div class="time-cell passed">2233</div>
   </div>
 
    
@@ -1043,7 +1043,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.34">21:29:07.980 request:
+  <div class="preformatted" data-parent="1.34">01:44:48.698 request:
 1 &gt; DELETE https://ops.enerbit.dev/learning/api/v1/meters/99999999999999999
 1 &gt; Accept: application/json
 1 &gt; Host: ops.enerbit.dev
@@ -1052,9 +1052,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:29:10.225 response time in milliseconds: 2235
+01:44:50.417 response time in milliseconds: 1709
 1 &lt; 404
-1 &lt; Date: Fri, 30 Jun 2023 02:29:14 GMT
+1 &lt; Date: Fri, 30 Jun 2023 06:44:54 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 28
 1 &lt; Connection: keep-alive
@@ -1094,9 +1094,9 @@
 
   
 
-  <div class="preformatted" data-parent="1.35">21:29:10.230 classpath:meters/delete_meter/delete-meter.feature:35
+  <div class="preformatted" data-parent="1.35">01:44:50.438 classpath:meters/delete_meter/delete-meter.feature:35
 Then status 202
-status code was: 404, expected: 202, response time in milliseconds: 2235, url: https://ops.enerbit.dev/learning/api/v1/meters/99999999999999999, response: 
+status code was: 404, expected: 202, response time in milliseconds: 1709, url: https://ops.enerbit.dev/learning/api/v1/meters/99999999999999999, response: 
 {&quot;detail&quot;:&quot;meter not found&quot;}
 classpath:meters/delete_meter/delete-meter.feature:35
 </div>   
