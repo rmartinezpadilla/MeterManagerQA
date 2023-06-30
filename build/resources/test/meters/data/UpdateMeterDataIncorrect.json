@@ -1,0 +1,14 @@
+{
+  "connection_type": "directa",
+  "storage_system": "interno",
+  "condition": "nuevo",
+  "owner": "RF",
+  "serial": "string",
+  "location": "Here",
+  "purchase": "string",
+  "i_max": 65.0,
+  "i_b": 23.2,
+  "i_n": 101.3,
+  "manufacturer": "string",
+  "seals": "xyz"
+}

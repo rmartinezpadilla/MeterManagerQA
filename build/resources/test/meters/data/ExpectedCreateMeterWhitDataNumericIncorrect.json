@@ -1,0 +1,28 @@
+{
+  "detail": [
+    {
+      "loc": [
+        "body",
+        "i_max"
+      ],
+      "msg": "none is not an allowed value",
+      "type": "type_error.none.not_allowed"
+    },
+    {
+      "loc": [
+        "body",
+        "i_b"
+      ],
+      "msg": "value is not a valid float",
+      "type": "type_error.float"
+    },
+    {
+      "loc": [
+        "body",
+        "seals"
+      ],
+      "msg": "value is not a valid float",
+      "type": "type_error.float"
+    }
+  ]
+}

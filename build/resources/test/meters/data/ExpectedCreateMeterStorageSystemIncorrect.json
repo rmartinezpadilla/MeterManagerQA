@@ -1,0 +1,18 @@
+{
+  "detail": [
+    {
+      "loc": [
+        "body",
+        "storage_system"
+      ],
+      "msg": "value is not a valid enumeration member; permitted: 'internos', 'externo'",
+      "type": "type_error.enum",
+      "ctx": {
+        "enum_values": [
+          "interno",
+          "externo"
+        ]
+      }
+    }
+  ]
+}

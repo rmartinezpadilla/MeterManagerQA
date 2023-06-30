@@ -1,0 +1,14 @@
+{
+  "serial": "342423423",
+  "connection_type": "directa",
+  "storage_system": "por fuera",
+  "condition": "nuevo",
+  "owner": "RF",
+  "location": "Almacen palmira",
+  "manufacturer": "yes",
+  "purchase": "2022-07-28 03:08:49.340514",
+  "i_max": 6345.654,
+  "i_b": 21.5,
+  "i_n": 876.5,
+  "seals": 545.65
+}

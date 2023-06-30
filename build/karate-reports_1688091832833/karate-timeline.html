@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-4","id":1},{"content":"pool-1-thread-5","id":2},{"content":"pool-1-thread-6","id":3},{"content":"pool-1-thread-2","id":4},{"content":"pool-1-thread-3","id":5},{"content":"pool-1-thread-1","id":6}];
+var items = [{"id":1,"group":1,"content":"meters\/get_meters\/read-meter[1:9]","start":1688080237885,"end":1688080241325,"title":"meters\/get_meters\/read-meter[1:9] 18:10:37.885-18:10:41.325 consult meter after creating it"},{"id":2,"group":2,"content":"meters\/get_meters\/read-meter[2:13]","start":1688080237885,"end":1688080241224,"title":"meters\/get_meters\/read-meter[2:13] 18:10:37.885-18:10:41.224 invalid status read a meter","className":"failed"},{"id":3,"group":3,"content":"meters\/get_meters\/read-meter[3.1:25]","start":1688080237885,"end":1688080241020,"title":"meters\/get_meters\/read-meter[3.1:25] 18:10:37.885-18:10:41.020 consult non-existent meter"},{"id":4,"group":4,"content":"meters\/get_meters\/read-meters[1.1:15]","start":1688080239848,"end":1688080241032,"title":"meters\/get_meters\/read-meters[1.1:15] 18:10:39.848-18:10:41.032 read meters"},{"id":5,"group":5,"content":"meters\/get_meters\/read-meters[2.1:22]","start":1688080240039,"end":1688080241309,"title":"meters\/get_meters\/read-meters[2.1:22] 18:10:40.039-18:10:41.309 failed status to consult meters","className":"failed"},{"id":6,"group":3,"content":"meters\/get_meters\/read-meters[3:27]","start":1688080241031,"end":1688080241425,"title":"meters\/get_meters\/read-meters[3:27] 18:10:41.031-18:10:41.425 failed to consult meters with serial non-existent"},{"id":7,"group":1,"content":"meters\/post_create_meter\/create-meter[1:13]","start":1688080241330,"end":1688080241937,"title":"meters\/post_create_meter\/create-meter[1:13] 18:10:41.330-18:10:41.937 create new meter"},{"id":8,"group":6,"content":"meters\/post_create_meter\/create-meter[2:24]","start":1688080241426,"end":1688080242033,"title":"meters\/post_create_meter\/create-meter[2:24] 18:10:41.426-18:10:42.033 error create new meter with number data incorrect"},{"id":9,"group":3,"content":"meters\/post_create_meter\/create-meter[3:33]","start":1688080241426,"end":1688080242027,"title":"meters\/post_create_meter\/create-meter[3:33] 18:10:41.426-18:10:42.027 error create new meter with connection type incorrect"},{"id":10,"group":1,"content":"meters\/post_create_meter\/create-meter[4:42]","start":1688080241943,"end":1688080242849,"title":"meters\/post_create_meter\/create-meter[4:42] 18:10:41.943-18:10:42.849 error create new meter with storage system incorrect"},{"id":11,"group":3,"content":"meters\/post_create_meter\/create-meter[5:51]","start":1688080242034,"end":1688080242929,"title":"meters\/post_create_meter\/create-meter[5:51] 18:10:42.034-18:10:42.929 error create new meter with condition incorrect"},{"id":12,"group":6,"content":"meters\/post_create_meter\/create-meter[6:60]","start":1688080242034,"end":1688080242950,"title":"meters\/post_create_meter\/create-meter[6:60] 18:10:42.034-18:10:42.950 error create new meter with owner incorrect"},{"id":13,"group":1,"content":"meters\/post_create_meter\/create-meter[7.1:76]","start":1688080242855,"end":1688080243537,"title":"meters\/post_create_meter\/create-meter[7.1:76] 18:10:42.855-18:10:43.537 status error create a meter","className":"failed"},{"id":14,"group":6,"content":"meters\/delete_meter\/delete-meter[1:6]","start":1688080237885,"end":1688080241421,"title":"meters\/delete_meter\/delete-meter[1:6] 18:10:37.885-18:10:41.421 delete a meter"},{"id":15,"group":4,"content":"meters\/delete_meter\/delete-meter[2:12]","start":1688080237885,"end":1688080239847,"title":"meters\/delete_meter\/delete-meter[2:12] 18:10:37.885-18:10:39.847 Failed to delete meter","className":"failed"},{"id":16,"group":5,"content":"meters\/delete_meter\/delete-meter[3.1:25]","start":1688080237885,"end":1688080240033,"title":"meters\/delete_meter\/delete-meter[3.1:25] 18:10:37.885-18:10:40.033 delete non-existent meter"},{"id":17,"group":4,"content":"meters\/patch_meter\/update-meter[1:9]","start":1688080241042,"end":1688080243153,"title":"meters\/patch_meter\/update-meter[1:9] 18:10:41.042-18:10:43.153 update a meter"},{"id":18,"group":2,"content":"meters\/patch_meter\/update-meter[2:14]","start":1688080241225,"end":1688080243025,"title":"meters\/patch_meter\/update-meter[2:14] 18:10:41.225-18:10:43.025 status error updating a meter","className":"failed"},{"id":19,"group":5,"content":"meters\/patch_meter\/update-meter[3.1:27]","start":1688080241319,"end":1688080243153,"title":"meters\/patch_meter\/update-meter[3.1:27] 18:10:41.319-18:10:43.153 update non-existent meter"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

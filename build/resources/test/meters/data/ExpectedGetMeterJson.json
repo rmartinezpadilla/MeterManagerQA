@@ -1,0 +1,17 @@
+{
+  "serial": "#ignore",
+  "connection_type": "#string",
+  "storage_system": "#string",
+  "condition": "#string",
+  "owner": "#string",
+  "location": "#string",
+  "manufacturer": "#string",
+  "purchase": "#string",
+  "i_max": "#number",
+  "i_b": "#number",
+  "i_n": "#number",
+  "seals": "#number",
+  "id": "#notnull",
+  "created_at": "#notnull",
+  "updated_at": "#ignore"
+}

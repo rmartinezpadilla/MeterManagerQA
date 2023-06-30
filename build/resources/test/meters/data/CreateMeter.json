@@ -1,0 +1,14 @@
+{
+  "serial": "50896234",
+  "connection_type": "indirecta",
+  "storage_system": "externo",
+  "condition": "usado",
+  "owner": "RF",
+  "location": "Almacen la loma",
+  "manufacturer": "yes",
+  "purchase": "2022-07-28 03:08:49.340514",
+  "i_max": 7777.654,
+  "i_b": 77.5,
+  "i_n": 77.5,
+  "seals": 777.65
+}

@@ -1,0 +1,18 @@
+{
+  "detail": [
+    {
+      "loc": [
+        "body",
+        "owner"
+      ],
+      "msg": "value is not a valid enumeration member; permitted: 'RF', 'OR'",
+      "type": "type_error.enum",
+      "ctx": {
+        "enum_values": [
+          "RF",
+          "OR"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "detail": [
+    {
+      "loc": [
+        "body",
+        "condition"
+      ],
+      "msg": "value is not a valid enumeration member; permitted: 'nuevo', 'usado'",
+      "type": "type_error.enum",
+      "ctx": {
+        "enum_values": [
+          "nuevo",
+          "usado"
+        ]
+      }
+    }
+  ]
+}

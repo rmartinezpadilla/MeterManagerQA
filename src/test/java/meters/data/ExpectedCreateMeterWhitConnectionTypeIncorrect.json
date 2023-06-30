@@ -1,0 +1,19 @@
+{
+  "detail": [
+    {
+      "loc": [
+        "body",
+        "connection_type"
+      ],
+      "msg": "value is not a valid enumeration member; permitted: 'directa', 'semi-directa', 'indirecta'",
+      "type": "type_error.enum",
+      "ctx": {
+        "enum_values": [
+          "directa",
+          "semi-directa",
+          "indirecta"
+        ]
+      }
+    }
+  ]
+}
