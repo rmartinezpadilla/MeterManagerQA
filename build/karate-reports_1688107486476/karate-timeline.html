@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-5","id":1},{"content":"pool-1-thread-6","id":2},{"content":"pool-1-thread-4","id":3},{"content":"pool-1-thread-2","id":4},{"content":"pool-1-thread-3","id":5},{"content":"pool-1-thread-1","id":6}];
+var items = [{"id":1,"group":1,"content":"meters\/get_meters\/read-meter[1:9]","start":1688092147390,"end":1688092151757,"title":"meters\/get_meters\/read-meter[1:9] 21:29:07.390-21:29:11.757 consult meter after creating it"},{"id":2,"group":2,"content":"meters\/get_meters\/read-meter[2:15]","start":1688092147385,"end":1688092151991,"title":"meters\/get_meters\/read-meter[2:15] 21:29:07.385-21:29:11.991 invalid status read a meter","className":"failed"},{"id":3,"group":3,"content":"meters\/get_meters\/read-meter[3.1:29]","start":1688092150235,"end":1688092150834,"title":"meters\/get_meters\/read-meter[3.1:29] 21:29:10.235-21:29:10.834 consult non-existent meter"},{"id":4,"group":4,"content":"meters\/get_meters\/read-meter[4:31]","start":1688092150625,"end":1688092151126,"title":"meters\/get_meters\/read-meter[4:31] 21:29:10.625-21:29:11.126 error get meter with id incorrect"},{"id":5,"group":5,"content":"meters\/get_meters\/read-meters[1:8]","start":1688092150633,"end":1688092151752,"title":"meters\/get_meters\/read-meters[1:8] 21:29:10.633-21:29:11.752 get all meters","className":"failed"},{"id":6,"group":3,"content":"meters\/get_meters\/read-meters[2.1:22]","start":1688092150851,"end":1688092153078,"title":"meters\/get_meters\/read-meters[2.1:22] 21:29:10.851-21:29:13.078 get meters with information"},{"id":7,"group":4,"content":"meters\/get_meters\/read-meters[3.1:31]","start":1688092151134,"end":1688092152888,"title":"meters\/get_meters\/read-meters[3.1:31] 21:29:11.134-21:29:12.888 failed status to consult meters","className":"failed"},{"id":8,"group":4,"content":"meters\/post_create_meter\/create-meter[1:14]","start":1688092152897,"end":1688092153291,"title":"meters\/post_create_meter\/create-meter[1:14] 21:29:12.897-21:29:13.291 create new meter"},{"id":9,"group":3,"content":"meters\/post_create_meter\/create-meter[2:25]","start":1688092153083,"end":1688092153451,"title":"meters\/post_create_meter\/create-meter[2:25] 21:29:13.083-21:29:13.451 error create new meter with number data incorrect"},{"id":10,"group":4,"content":"meters\/post_create_meter\/create-meter[3:34]","start":1688092153297,"end":1688092153686,"title":"meters\/post_create_meter\/create-meter[3:34] 21:29:13.297-21:29:13.686 error create new meter with connection type incorrect"},{"id":11,"group":3,"content":"meters\/post_create_meter\/create-meter[4:43]","start":1688092153457,"end":1688092153795,"title":"meters\/post_create_meter\/create-meter[4:43] 21:29:13.457-21:29:13.795 error create new meter with storage system incorrect","className":"failed"},{"id":12,"group":5,"content":"meters\/post_create_meter\/create-meter[5:52]","start":1688092153487,"end":1688092153836,"title":"meters\/post_create_meter\/create-meter[5:52] 21:29:13.487-21:29:13.836 error create new meter with condition incorrect"},{"id":13,"group":6,"content":"meters\/post_create_meter\/create-meter[6:61]","start":1688092153595,"end":1688092153944,"title":"meters\/post_create_meter\/create-meter[6:61] 21:29:13.595-21:29:13.944 error create new meter with owner incorrect"},{"id":14,"group":2,"content":"meters\/post_create_meter\/create-meter[7.1:77]","start":1688092153595,"end":1688092153934,"title":"meters\/post_create_meter\/create-meter[7.1:77] 21:29:13.595-21:29:13.934 status error create a meter","className":"failed"},{"id":15,"group":6,"content":"meters\/delete_meter\/delete-meter[1:9]","start":1688092147385,"end":1688092151889,"title":"meters\/delete_meter\/delete-meter[1:9] 21:29:07.385-21:29:11.889 delete a meter"},{"id":16,"group":4,"content":"meters\/delete_meter\/delete-meter[2:15]","start":1688092147385,"end":1688092150612,"title":"meters\/delete_meter\/delete-meter[2:15] 21:29:07.385-21:29:10.612 Failed to delete meter with id incorrect"},{"id":17,"group":5,"content":"meters\/delete_meter\/delete-meter[3.1:29]","start":1688092147390,"end":1688092150624,"title":"meters\/delete_meter\/delete-meter[3.1:29] 21:29:07.390-21:29:10.624 delete non-existent meter"},{"id":18,"group":3,"content":"meters\/delete_meter\/delete-meter[4.1:39]","start":1688092147385,"end":1688092150229,"title":"meters\/delete_meter\/delete-meter[4.1:39] 21:29:07.385-21:29:10.229 Failed to delete meter","className":"failed"},{"id":19,"group":5,"content":"meters\/patch_meter\/update-meter[1:13]","start":1688092151763,"end":1688092153483,"title":"meters\/patch_meter\/update-meter[1:13] 21:29:11.763-21:29:13.483 update a meter"},{"id":20,"group":1,"content":"meters\/patch_meter\/update-meter[2:18]","start":1688092151773,"end":1688092153691,"title":"meters\/patch_meter\/update-meter[2:18] 21:29:11.773-21:29:13.691 status error updating a meter","className":"failed"},{"id":21,"group":6,"content":"meters\/patch_meter\/update-meter[3:23]","start":1688092151896,"end":1688092153590,"title":"meters\/patch_meter\/update-meter[3:23] 21:29:11.896-21:29:13.590 updating meter with seals incorrect"},{"id":22,"group":2,"content":"meters\/patch_meter\/update-meter[4.1:38]","start":1688092151997,"end":1688092153590,"title":"meters\/patch_meter\/update-meter[4.1:38] 21:29:11.997-21:29:13.590 update non-existent meter"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
