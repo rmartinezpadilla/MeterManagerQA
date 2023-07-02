@@ -17,10 +17,6 @@ Feature: I as user of the Enerbit
     And match $ == jsonResponse
     And def meterId = $.id
 
-   # Examples:
-   #   |serial         |connection_type    |storage_system  |condition  |owner  |location         |manufacturer |purchase                     |i_max    |i_b  |i_n    |seals    |
-   #   |1067890893     |indirecta          |externo         |usado      |RF     |Almacen monteria |yes          |2020-07-28 03:08:49.340514   |4444.654 |44.5 |444.5  |444.65   |
-
   @CreateMeterNumberDataInvalid
   Scenario: error create new meter with number data incorrect
     * def jsonCreateError = read('../data/CreateMeterDataNumericInvalid.json')

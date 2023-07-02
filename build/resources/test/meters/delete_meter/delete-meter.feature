@@ -4,22 +4,23 @@ Feature: I as user of the Enerbit
 
   Background:
     * header Accept = 'application/json'
+    * url "https://ops.enerbit.dev/learning/api/v1/meters/"
 
   @deletemeter
   Scenario: delete a meter
     * call read("../post_create_meter/create-meter.feature@createmeter")
-    Given url "https://ops.enerbit.dev/learning/api/v1/meters/" + meterId
+    Given path meterId
     When method delete
     Then status 202
 
   Scenario: Failed to delete meter with id incorrect
-    Given url "https://ops.enerbit.dev/learning/api/v1/meters/xyz"
+    Given path "xyz"
     When method delete
     Then status 422
     And match $ == {  "detail": [  {  "loc": [  "path",  "id"  ],  "msg": "value is not a valid integer",  "type": "type_error.integer"  }  ]  }
 
   Scenario Outline: delete non-existent meter
-    Given url "https://ops.enerbit.dev/learning/api/v1/meters/" + "<id>"
+    Given path "<id>"
     When method delete
     Then status 404
     And match $.detail == "meter not found"
@@ -29,7 +30,6 @@ Feature: I as user of the Enerbit
       | 99999999999999999 |
 
   Scenario Outline: Failed to delete meter
-  : Failed to delete meter
     Given url "https://ops.enerbit.dev/learning/api/v1/meters/" + "<id>"
     When method delete
     Then status 202
