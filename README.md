@@ -27,7 +27,6 @@ que es donde se encuentran todos los archivos de pruebas, una vez en esta direcc
 una vez abrimos el archivo podremos darle clic derecho y seleccionamos la opción "Run file" para ejecutar las pruebas
 
 Construido con 🛠️
-Menciona las herramientas que utilizaste para crear tu proyecto
 1. Java (JDK)
 2. gradle
 3. JUnit
